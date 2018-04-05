@@ -21,6 +21,11 @@
     "url": "https://github.com/GriffinGroupGlobal/backend-challenge-1/issues"
   },
   "homepage": "https://github.com/GriffinGroupGlobal/backend-challenge-1#readme",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "nodemon": "^1.17.3"
+  },
   "devDependencies": {}
 }
