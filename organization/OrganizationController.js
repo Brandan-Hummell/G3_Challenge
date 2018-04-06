@@ -38,11 +38,12 @@ router.get('/', function(req, res) {
     });
 });
 
-//Find a single organization from the DB
+//Find a single organization from the DB 
 router.get('/:id', function(req, res){
     
     Organization.findById(req.params.id, function(err, organization) {
         if (err) return res.status(500).send("There was an error encountered while trying to find the specified organization");
+        // if no organization is found with the ID, send a 404 status code to indicate that no organization with that ID exists to be found.
         if (!organization) return res.status(404).send("No Organization found.");
         res.status(200).send(organization);
     });

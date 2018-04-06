@@ -10,6 +10,13 @@ Using the examples given in the challenge, I created a basic organization model 
 
 As requested, there is also a simple findById method to return a specified organization object (using the default id property that is automatically populated when an organization is created).
 
+## Routing
+
+get http://localhost:3000/organizations - returns all organizations
+post http://localhost:3000/organizations - creates an organization using the body values in the post request
+get http://localhost:3000/organizations/:id - returns a specific organization (filling in the organization id for :id at the end of the URL)
+
+
 ## Error Handling
 
 I used some basic error handling that is built into express. If there is an error during while reading or creating organizations, the response will display the appropriate status code.
@@ -18,8 +25,10 @@ I used some basic error handling that is built into express. If there is an erro
 
 I used Postman (at the recommendation of an online resource) to test the get and post responses for this app. Postman was incredibly intuitive and made the whole testing process easier.
 
+If I continued working on this app, I would learn more about mocha and implement automated testing via the principles of TDD.
+
 ## Next Steps
 
-If I were to work on this further, I would learn more about ES6. Some of the standards I've used in this challenge are antiquated; I need to learn more about express in order to conform to the newer standards and understand the underlying nuances.
+If I were to work on this further, I would learn more about ES6. Some of the standards I've used in this challenge are from ES5; I need to learn more about express in order to conform to the newer standards and understand the underlying nuances.
 
 As stated before, I would also add the rest of the CRUD capabilities to the organization controller.
